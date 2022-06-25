@@ -14,7 +14,7 @@ See the [JavaScript language guide for CircleCI here](https://circleci.com/docs/
   npm start
 ```
 
-**Note : Please make sure your MongoDB is running.** For MongoDB installation guide see [this](https://docs.mongodb.org/v3.0/installation/). Also `npm3` is required to install dependencies properly.
+**Note : Please make sure your MongoDB is running fine and perfectly.** For MongoDB installation guide see [this](https://docs.mongodb.org/v3.0/installation/). Also `npm3` is required to install dependencies properly.
 
 ## Available Commands
 
@@ -38,7 +38,7 @@ MERN uses Webpack for bundling modules. There are four types of Webpack configs 
 
 The Webpack configuration is minimal and beginner-friendly. You can customise and add more features to it for production build.
 
-### Server
+### Server is in anything
 
 MERN uses express web framework. Our app sits in server.js where we check for NODE_ENV.
 
@@ -57,6 +57,7 @@ app.use((req, res) => {
         routes,
         location: req.url
     }, (err, redirectLocation, renderProps) => {
+    //working fine, just a comment
         if (err) {
             return res.status(500).end('Internal server error');
         }
